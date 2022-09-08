@@ -1,0 +1,165 @@
+1- Install Node JS
+
+2- Install Open JDK & Setup JAVA_HOME Variable:
+
+[https://formulae.brew.sh/cask/adoptopenjdk](https://formulae.brew.sh/cask/adoptopenjdk)
+
+Return the location where java sdk is installed:
+
+/usr/libexec/java_home
+
+Version:
+
+/usr/libexec/java_home -V
+
+Add the env variable: 
+
+vim ~/.zshenv
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+Source it:
+
+source ~/.zshenv
+
+3- Install Android Studio & Setup ANDROID_HOME Variable 
+
+- Command: cd /Users/joanesquivel/Library/Android/sdk
+- we need to add tools & platform-tools sources
+- Command: vim ~/.zshenv
+    - Enter:
+    
+    export ANDROID_HOME="/Users/joanesquivel/Library/Android/sdk"
+    export PATH=$ANDROID_HOME/platform-tools:$PATH
+    export PATH=$ANDROID_HOME/tools:$PATH
+    
+- Command: source ~/.zshenv
+- Command: echo $ANDROID_HOME
+Response: /Users/joanesquivel/Library/Android/sdk
+- Command: adb
+    - [https://developer.android.com/studio/command-line/adb](https://developer.android.com/studio/command-line/adb)
+    
+    [ADB](https://www.notion.so/ADB-8ce53e0e68414db7abca776751651196)
+    
+
+4- Create a virtual device with Android Studio
+
+- Download at least 2 images such as S & R
+
+5- Download and install the Appium Inspector
+
+[https://github.com/appium/appium-inspector](https://github.com/appium/appium-inspector)
+
+Releases: https://github.com/appium/appium-inspector/releases
+
+To open this in Mac OS you need to open it with applications
+
+Set the port as 4724 and set the same for appium
+
+6- Install Appium
+
+npm i -g appium@next
+
+appium -v to check the version
+
+7- Install doctor appium and check
+
+[https://www.npmjs.com/package/appium-doctor](https://www.npmjs.com/package/appium-doctor)
+
+`npm install appium-doctor -g`
+
+run: `appium-doctor -h`
+
+8- Install the drivers:
+
+appium driver install xcuitest
+
+appium driver install uiautomator2
+
+Check the drivers installed in your computer: appium driver list
+
+8- Download a sample apk
+
+[https://github.com/saucelabs/sample-app-mobile/releases](https://github.com/saucelabs/sample-app-mobile/releases)
+
+9- Install WebDriver.IO
+
+Create a folder
+
+npm init wdio .
+
+Configure the capabilities:
+
+```jsx
+capabilities: [{
+    
+        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
+        // grid with only 5 firefox instances available you can make sure that not more than
+        // 5 instances get started at a time.
+        // maxInstances: 5,
+        //
+        // browserName: 'chrome',
+        // acceptInsecureCerts: true
+        // If outputDir is provided WebdriverIO can capture driver session logs
+        // it is possible to configure which logTypes to include/exclude.
+        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+        // excludeDriverLogs: ['bugreport', 'server'],
+        platformName: 'Android', 
+        "appium:device-name": 'Pixel 4 API 30(R)',
+        "appium:platformVersion": "11.0",
+        "appium:automationName": "UIAutomator2",
+        "appium:app": androidAppPath,
+        "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
+    }],
+```
+
+npm install --save-dev appium@next
+
+Make sure the browsers are still installed: appium driver list --installed
+
+If not: 
+
+appium driver install xcuitest
+
+appium driver install uiautomator2
+
+and run npx wdio (make sure your emulated device is up and running)
+
+Test is going to work.
+
+10- Appium inspector
+
+Remote Host: 0.0.0.0
+Remote Port: 4724
+
+Remote Path: /
+
+Desired Capabilities
+
+platformName: Android
+
+platformVersion: 12
+
+deviceName: Pixel 4 API 31(S)
+
+app: /Users/joanesquivel/Desktop/TestAutomation/appium-demo/app/android/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+
+appium:automationName: UIAutomator2
+
+Run: appium -p 4724
+
+Make sure your emulator is up and running.
+
+Execute the inspector.
+
+11- Locators
+
+Accessibility ID:
+
+ * Does not change with localization
+
+ * Cross platform compatibility
+
+App: [https://github.com/saucelabs/sample-app-mobile](https://github.com/saucelabs/sample-app-mobile)
+
+[https://github.com/saucelabs/my-demo-app-rn](https://github.com/saucelabs/my-demo-app-rn)
