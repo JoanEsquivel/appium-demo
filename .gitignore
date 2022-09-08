@@ -1,3 +1,4 @@
 node_modules
 app/android
 app/ios
+.DS_Store
