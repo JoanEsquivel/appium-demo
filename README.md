@@ -7,10 +7,10 @@ This project has been created to demonstrate how a QA Engineer can perform Mobil
 
 ## System Requirements
 
-#### [Node JS](https://linktodocumentation)
+#### Node JS
 
 We need node js to download Appium beta version & drivers easily.
-
+* Download[ Node Js](https://linktodocumentation) depending on your operating system.
 #### Java JDK & JAVA_HOME variable
 
 * [Open JDK](https://openjdk.org)
@@ -56,7 +56,7 @@ Tested the following steps on MAC OS Monterrey:
 Tested the following steps on MAC OS Monterrey:
 * Android studio on Mac can be located at:
 ```bash
-    * cd /Users/joanesquivel/Library/Android/sdk
+    * cd /Users/[USER]/Library/Android/sdk
 ```
 * We need to add a reference to a couple of folders inside of that SDK
    * Tools & Platform Tools
@@ -66,7 +66,7 @@ Tested the following steps on MAC OS Monterrey:
 ```
 * Enter the environment variables and save the vim session (:wq!):
 ```bash
-    export ANDROID_HOME="/Users/joanesquivel/Library/Android/sdk"
+    export ANDROID_HOME="/Users/[USER]/Library/Android/sdk"
     export PATH=$ANDROID_HOME/platform-tools:$PATH
     export PATH=$ANDROID_HOME/tools:$PATH
 ```
@@ -80,12 +80,163 @@ Tested the following steps on MAC OS Monterrey:
 ```
 * It should return something like: 
 ```bash
-    /Users/joanesquivel/Library/Android/sdk
+    /Users/[USER]/Library/Android/sdk
 ```
 * With this configured you can access the command [Android Debug Bridge](https://developer.android.com/studio/command-line/adb)
 ```bash
     adb
 ```
 
+#### Download Appium Inspector
+In order to find the correct locators to map elements, you will need to have this tool installed in your computer.
 
+* [Appium Inspector Releases](https://github.com/appium/appium/blob/1.x/docs/en/writing-running-appium/web/chromedriver.md)
 
+For this project you can use the following configuration:
+
+| Server Key | Server Value |
+| ------------- | ------------- |
+| Remote Host | 0.0.0.0 |
+| Remote Port | 4724 |
+| Remote Path | / |
+
+Android Desired Capabilities(Example)
+| Desired Capability Key  | Desired Capability Value |
+| ------------- | ------------- |
+| platformName  | Android  |
+| platformVersion  | 12  |
+| deviceName | Pixel 4 API 31(S) | 
+| app | /Users/joanesquivel/Desktop/TestAutomation/appium-demo/app/android/Android-MyDemoAppRN.1.3.0.build-244.apk |
+| appium:automationName | UIAutomator2 |
+
+#### Install Apium 
+Appium is an open source test automation framework for use with native, hybrid and mobile web apps. 
+It drives iOS, Android, and Windows apps using the WebDriver protocol.
+
+* Install [Appium](https://appium.io) from the official documentation 
+* Install [Appium 2](https://appiumpro.com/editions/122-installing-appium-20-and-the-driver-and-plugins-cli) by Node JS(Beta):
+```bash
+    npm install -g appium@next
+```
+Check the appium version using
+```bash
+    appium -v
+```
+
+#### Appium Doctor
+Appium is an open source test automation framework for use with native, hybrid and mobile web apps. 
+It drives iOS, Android, and Windows apps using the WebDriver protocol.
+
+* Install [Appium](https://appium.io) from the official documentation 
+* Install [Appium 2](https://appiumpro.com/editions/122-installing-appium-20-and-the-driver-and-plugins-cli) by Node JS(Beta):
+```bash
+    npm install -g appium@next
+```
+Check the appium version using
+```bash
+    appium -v
+```
+
+#### Appium Doctor
+To check if your OS meets the appium requirements, install this node package.
+* [Appium Doctor Package](https://github.com/appium/appium-doctor)
+Install it using the command 
+```bash 
+npm install appium-doctor -g
+```
+And then use the library:
+```bash 
+appium-doctor
+```
+
+#### Appium drivers
+If you want Appium to work correctly, you need to download and have the android/ios driver in your system.
+Run the commands:
+```bash 
+appium driver install xcuitest
+appium driver install uiautomator2
+```
+Check the installed drivers using
+```bash 
+appium driver list
+```
+
+#### Sample applications
+Sample Application that you can use:
+
+[SauceDemo Hybrid App - React Native)](https://github.com/saucelabs/my-demo-app-rn) - (Framework is configured to use this one)
+
+[Sauce Labs Native Sample Application](https://github.com/saucelabs/sample-app-mobile)
+
+[WebdriverIO Demo App for iOS and Android](https://github.com/webdriverio/native-demo-app)
+## Setup WebDriverIO
+
+1- Run the command to create the package.json & continue with the installation process
+```bash
+    npm init wdio .
+```
+2- Using the WDIO Configuration Helper select the options you want to select. In my case I decided to use:  
+* On my local machine
+* Mocha
+* No compiler
+* Spect Location: Default
+* Do you want WebDriverIO to generate some test files?: No
+* Reporter: Spec
+* No Plugin 
+* Service: Appium
+* Base URL: Default
+* NPM Install: Yes
+
+3- Add your tests at 
+```bash
+'./[yourProject]/specs/**/*.js'
+```
+
+4- Configure the app route at wdio.conf.js
+* Declare where it is going to be located
+```bash
+const projectPath = require('path')
+const androidAppPath = projectPath.join(process.cwd(), "app/android/[APP_NAME]")
+```
+
+* Set up the capabilities
+```bash
+capabilities: [{
+        platformName: 'Android', 
+        "appium:device-name": '[DEVICE_NAME)]',
+        "appium:platformVersion": "[PLATFORM - IMAGE]",
+        "appium:automationName": "[DRIVER]",
+        "appium:app": androidAppPath,
+        // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
+    }]
+```
+
+* Install Appium in your project
+```bash
+    npm install --save-dev appium@next
+```
+
+* Check if the drivers are still available, if not installed them again:
+```bash 
+appium driver list
+```
+```bash 
+appium driver install xcuitest
+appium driver install uiautomator2
+```
+
+* Run your scripts using
+```bash
+npx wdio
+```
+
+## Setup WebDriverIO
+if you want to run this project:
+
+1- Meet the requirements
+
+2- Clone the project
+
+3- Run: npm i
+
+4- Download the android app and place it under app/android
