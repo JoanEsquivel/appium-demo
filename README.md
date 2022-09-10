@@ -105,10 +105,10 @@ For this project you can use the following configuration:
 Android Desired Capabilities(Example)
 | Desired Capability Key  | Desired Capability Value |
 | ------------- | ------------- |
-| platformName  | Android  |
-| platformVersion  | 12  |
-| deviceName | Pixel 4 API 31(S) | 
-| app | /Users/joanesquivel/Desktop/TestAutomation/appium-demo/app/android/Android-MyDemoAppRN.1.3.0.build-244.apk |
+| platformName  | [PLATFORM] |
+| platformVersion  | [OS VERSION / IMAGE]  |
+| deviceName | [EMULATED_DEVICE_NAME] | 
+| app | /[PROJECT_PATH]/[APP_NAME] |
 | appium:automationName | UIAutomator2 |
 
 #### Install Apium 
