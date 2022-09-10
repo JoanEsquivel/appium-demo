@@ -218,7 +218,7 @@ capabilities: [{
     npm install --save-dev appium@next
 ```
 
-* Check if the drivers are still available, if not installed them again:
+* Check if the drivers are still available, if not install them again:
 ```bash 
 appium driver list
 ```
