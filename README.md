@@ -16,7 +16,9 @@ We need node js to download Appium beta version & drivers easily.
 * [Open JDK](https://openjdk.org)
 * [JAVA_HOME setup for Windows](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
 * [JAVA_HOME setup for Mac](https://mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/)
-Tested the following steps on MAC OS Monterrey:
+
+I Tested the following steps on MAC OS Monterrey:
+
 * Installed Adopted [Open JDK with Homebrew](https://formulae.brew.sh/cask/adoptopenjdk)
 * To return where was the SDK installed I used the command:
 ```bash
