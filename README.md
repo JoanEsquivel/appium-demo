@@ -126,20 +126,6 @@ Check the appium version using
 ```
 
 #### Appium Doctor
-Appium is an open source test automation framework for use with native, hybrid and mobile web apps. 
-It drives iOS, Android, and Windows apps using the WebDriver protocol.
-
-* Install [Appium](https://appium.io) from the official documentation 
-* Install [Appium 2](https://appiumpro.com/editions/122-installing-appium-20-and-the-driver-and-plugins-cli) by Node JS(Beta):
-```bash
-    npm install -g appium@next
-```
-Check the appium version using
-```bash
-    appium -v
-```
-
-#### Appium Doctor
 To check if your OS meets the appium requirements, install this node package.
 * [Appium Doctor Package](https://github.com/appium/appium-doctor)
 Install it using the command 
