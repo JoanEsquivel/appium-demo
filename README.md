@@ -1,5 +1,5 @@
 
-# Appium + WebDriver.IO Demo Framework - Android & IOS(Pending) Example
+# Appium + WebDriver.IO Demo Framework - Android & IOS(In progress) Example
 
 This project has been created to demonstrate how a QA Engineer can perform Mobile Testing using Appium + WebDriver.IO
 More commands and insights about the integration at [WebDriverIO Appium docs](https://webdriver.io/docs/api/appium/)
@@ -228,3 +228,6 @@ if you want to run this project:
 3- Run: npm i
 
 4- Download the android app and place it under app/android
+
+## Integration step by step at YouTube
+[![ANDROID TESTING VIDEO](https://i.ytimg.com/vi/KN1sTvvX0mM/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLCX4kTzoTmbbwAa26u5IFy1Fb0Z4A)](https://www.youtube.com/watch?v=KN1sTvvX0mM&t=2569s)
