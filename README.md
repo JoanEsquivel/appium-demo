@@ -1,11 +1,11 @@
 
-# Appium + WebDriver.IO Demo Framework - Android & IOS(In progress) Example
+# Appium + WebDriver.IO Demo Framework - Android & IOS Example
 
 This project has been created to demonstrate how a QA Engineer can perform Mobile Testing using Appium + WebDriver.IO
 More commands and insights about the integration at [WebDriverIO Appium docs](https://webdriver.io/docs/api/appium/)
 
-
-## System Requirements
+- - - 
+## General System Requirements
 
 #### Node JS
 
@@ -49,6 +49,7 @@ I Tested the following steps on MAC OS Monterrey:
     /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 ```
 
+## Android Setup
 #### Android Studio & ANDROID_HOME variable
 
 * [Android Studio](https://developer.android.com/studio?hl=es-419&gclsrc=aw.ds&gclid=Cj0KCQjwyOuYBhCGARIsAIdGQRNrDv20QvoOy_-I5E1LoZdOLu3nvhlwX_7EjPeHcE1kGQNNcIVOme0aAqckEALw_wcB)
@@ -88,6 +89,29 @@ Tested the following steps on MAC OS Monterrey:
 ```bash
     adb
 ```
+- - -
+
+##IOS Setup
+
+1. Install XCode from the MacOs App Store
+2. Install [XCode Command line tools](https://www.freecodecamp.org/news/install-xcode-command-line-tools/)
+```bash
+    xcode-select --install
+```
+- Make sure it is installed correctly using the following command:
+```bash
+    xcode-select -p
+```
+- It should return something like(may defer from your OS version):
+```bash
+    /Applications/Xcode.app/Contents/Developer
+```
+3. Install Carthage(It is a simple dependency manager for macOS and iOS, created by a group of developers from GitHub).
+```bash
+    brew install carthage'
+```
+
+---
 
 #### Download Appium Inspector
 In order to find the correct locators to map elements, you will need to have this tool installed in your computer.
@@ -105,11 +129,20 @@ For this project you can use the following configuration:
 Android Desired Capabilities(Example)
 | Desired Capability Key  | Desired Capability Value |
 | ------------- | ------------- |
-| platformName  | [PLATFORM] |
+| platformName  | Android |
 | platformVersion  | [OS VERSION / IMAGE]  |
 | deviceName | [EMULATED_DEVICE_NAME] | 
-| app | /[PROJECT_PATH]/[APP_NAME] |
+| app | /[PROJECT_PATH]/[APP_NAME].apk |
 | appium:automationName | UIAutomator2 |
+
+IOS Desired Capabilities(Emulator - App)
+| Desired Capability Key  | Desired Capability Value |
+| ------------- | ------------- |
+| platformName  | IOS |
+| platformVersion  | [OS VERSION / IMAGE]  |
+| deviceName | [EMULATED_DEVICE_NAME] | 
+| app | /[PROJECT_PATH]/[APP_NAME].app |
+| appium:automationName | XCUItest |
 
 #### Install Apium 
 Appium is an open source test automation framework for use with native, hybrid and mobile web apps. 
@@ -157,6 +190,10 @@ Sample Application that you can use:
 [Sauce Labs Native Sample Application](https://github.com/saucelabs/sample-app-mobile)
 
 [WebdriverIO Demo App for iOS and Android](https://github.com/webdriverio/native-demo-app)
+
+***Important Note:***
+For IOS you are going to need an app build to run it in simulators, but an .IPA file to run it in real devices. It required additonal desired capabilities, and you can see which ones at this [discussion](https://discuss.appium.io/t/setup-appium-inspector-to-run-ipa-on-real-devices-iphone/36055/17)
+
 ## Setup WebDriverIO
 
 1- Run the command to create the package.json & continue with the installation process
@@ -184,18 +221,29 @@ Sample Application that you can use:
 * Declare where it is going to be located
 ```bash
 const projectPath = require('path')
-const androidAppPath = projectPath.join(process.cwd(), "app/android/[APP_NAME]")
+const androidAppPath = projectPath.join(process.cwd(), "app/android/Android-MyDemoAppRN.1.3.0.build-244.apk")
+const iosAppPath = projectPath.join(process.cwd(),"app/ios/MyRNDemoApp.app");
 ```
 
-* Set up the capabilities
+* Set up the capabilities for Android(Emulator sample)
 ```bash
 capabilities: [{
         platformName: 'Android', 
-        "appium:device-name": '[DEVICE_NAME)]',
-        "appium:platformVersion": "[PLATFORM - IMAGE]",
-        "appium:automationName": "[DRIVER]",
+        "appium:device-name": 'Pixel 4 API 30(R)',
+        "appium:platformVersion": "11.0",
+        "appium:automationName": "UIAutomator2",
         "appium:app": androidAppPath,
-        // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
+        // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"(For OLD swaglabs app)
+    }]
+```
+* Set up the capabilities for Android(Emulator sample)
+```bash
+capabilities: [{
+        platformName: 'IOS',
+        "appium:device-name": 'iPhone 13 Pro Max',
+        "appium:platformVersion": "16.0",
+        "appium:automationName": "XCUItest",
+        "appium:app": iosAppPath,   
     }]
 ```
 
@@ -229,5 +277,5 @@ if you want to run this project:
 
 4- Download the android app and place it under app/android
 
-## Integration step by step at YouTube
+## Android setup & demo
 [![ANDROID TESTING VIDEO](https://i.ytimg.com/vi/KN1sTvvX0mM/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLCX4kTzoTmbbwAa26u5IFy1Fb0Z4A)](https://www.youtube.com/watch?v=KN1sTvvX0mM&t=2569s)

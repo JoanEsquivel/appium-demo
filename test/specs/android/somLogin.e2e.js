@@ -1,6 +1,6 @@
-const CatalogScreen = require("../screenObjects/android/Catalog.screen");
-const LoginScreen = require("../screenObjects/android/Login.screen");
-const LeftSideMenuScreen = require("../screenObjects/android/LeftSideMenu.screen")
+const CatalogScreen = require("../../screenObjects/android/Catalog.screen");
+const LoginScreen = require("../../screenObjects/android/Login.screen");
+const LeftSideMenuScreen = require("../../screenObjects/android/LeftSideMenu.screen")
 
 describe("My Login Demo", () => {
   beforeEach(async () => {

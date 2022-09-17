@@ -10,7 +10,7 @@
         "@wdio/spec-reporter": "^7.24.0",
         "appium": "^2.0.0-beta.19",
         "appium-uiautomator2-driver": "^2.6.0",
-        "appium-xcuitest-driver": "^4.11.0",
+        "appium-xcuitest-driver": "^4.11.1",
         "chromedriver": "^105.0.0",
         "wdio-chromedriver-service": "^7.3.2"
     },
