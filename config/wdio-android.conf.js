@@ -60,8 +60,8 @@ exports.config = {
   capabilities: [
     //ANDROID
     {
-        platformName: 'Android',
-        "appium:device-name": 'Pixel 4 API 30(R)',
+        "platformName": 'Android',
+        "appium:deviceName": 'Pixel 4 API 30(R)',
         "appium:platformVersion": "11.0",
         "appium:automationName": "UIAutomator2",
         "appium:app": androidAppPath,
@@ -115,7 +115,18 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["appium"],
+  services: [
+    [
+      "appium",
+      {
+        args: {
+          address: "localhost",
+          port: 4723,
+        },
+        logPath: "./",
+      },
+    ],
+  ],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber

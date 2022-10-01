@@ -3,10 +3,7 @@ const androidAppPath = projectPath.join(
   process.cwd(),
   "app/android/Android-MyDemoAppRN.1.3.0.build-244.apk"
 );
-const iosAppPath = projectPath.join(
-    process.cwd(),
-    "app/ios/MyRNDemoApp.app"
-  );
+const iosAppPath = projectPath.join(process.cwd(), "app/ios/MyRNDemoApp.app");
 exports.config = {
   //
   // ====================
@@ -59,12 +56,12 @@ exports.config = {
   //
   capabilities: [
     {
-        platformName: 'IOS',
-        "appium:device-name": 'iPhone 13 Pro Max',
-        "appium:platformVersion": "16.0",
-        "appium:automationName": "XCUItest",
-        "appium:app": iosAppPath,   
-    }
+      "platformName": "IOS",
+      "appium:deviceName": "iPhone 14 Pro Max",
+      "appium:platformVersion": "16.0",
+      "appium:automationName": "XCUItest",
+      "appium:app": iosAppPath,
+    },
   ],
   //
   // ===================
@@ -113,7 +110,18 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["appium"],
+  services: [
+    [
+      "appium",
+      {
+        args: {
+          address: "localhost",
+          port: 4723,
+        },
+        logPath: "./",
+      },
+    ],
+  ],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
