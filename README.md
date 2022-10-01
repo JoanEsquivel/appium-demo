@@ -286,6 +286,8 @@ if you want to run this project:
 
 ### Extra Information
 
-[UI Selectors (Android)](https://developer.android.com/reference/androidx/test/uiautomator/UiSelector)
-[Predicate Strings Selectors (IOS)](https://appium.io/docs/en/writing-running-appium/ios/ios-predicate/)
-[Class Chain Selectors (IOS)](https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules)
+* [UI Selectors (Android)](https://developer.android.com/reference/androidx/test/uiautomator/UiSelector)
+
+* [Predicate Strings Selectors (IOS)](https://appium.io/docs/en/writing-running-appium/ios/ios-predicate/)
+
+* [Class Chain Selectors (IOS)](https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules)
