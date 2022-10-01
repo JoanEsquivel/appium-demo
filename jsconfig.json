@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["node", "webdriverio/async", "@wdio/mocha-framework"],
+    "module": "commonjs"
+  },
+  "include": ["test/screenObjects/**/**.js"]
+}
+
+

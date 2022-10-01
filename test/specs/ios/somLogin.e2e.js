@@ -1,11 +1,12 @@
-const CatalogScreen = require("../screenObjects/android/Catalog.screen");
-const LoginScreen = require("../screenObjects/android/Login.screen");
-const LeftSideMenuScreen = require("../screenObjects/android/LeftSideMenu.screen")
+const CatalogScreen = require("../../screenObjects/ios/Catalog.screen");
+const LoginScreen = require("../../screenObjects/ios/Login.screen");
+const LeftSideMenuScreen = require("../../screenObjects/ios/BottomSideMenu.screen")
+const MainMenuScreen = require("../../screenObjects/ios/MainMenu.screen")
 
 describe("My Login Demo", () => {
   beforeEach(async () => {
     await LeftSideMenuScreen.expandMenuButton.click();
-    await LeftSideMenuScreen.loginMenuOption.click();
+    await MainMenuScreen.loginMenuOption.click();
   });
 
   it("should not login with invalid credentials", async () => {
