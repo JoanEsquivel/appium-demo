@@ -91,7 +91,7 @@ Tested the following steps on MAC OS Monterrey:
 ```
 - - -
 
-##IOS Setup
+## IOS Setup
 
 1. Install XCode from the MacOs App Store
 2. Install [XCode Command line tools](https://www.freecodecamp.org/news/install-xcode-command-line-tools/)
@@ -108,7 +108,7 @@ Tested the following steps on MAC OS Monterrey:
 ```
 3. Install Carthage(It is a simple dependency manager for macOS and iOS, created by a group of developers from GitHub).
 ```bash
-    brew install carthage'
+    brew install carthage
 ```
 
 ---
@@ -192,7 +192,8 @@ Sample Application that you can use:
 [WebdriverIO Demo App for iOS and Android](https://github.com/webdriverio/native-demo-app)
 
 ***Important Note:***
-For IOS you are going to need an app build to run it in simulators, but an .IPA file to run it in real devices. It required additonal desired capabilities, and you can see which ones at this [discussion](https://discuss.appium.io/t/setup-appium-inspector-to-run-ipa-on-real-devices-iphone/36055/17)
+For IOS you are going to need an app build to run it in simulators, but an .IPA file to run it in real devices. It required additonal desired capabilities, and you can see which ones in the next article: [Appium XCUITest Driver Real Device Setup
+](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/)
 
 ## Setup WebDriverIO
 
@@ -269,13 +270,22 @@ npx wdio
 ## Setup WebDriverIO
 if you want to run this project:
 
-1- Meet the requirements
+1- Install all the system requirements
 
 2- Clone the project
 
 3- Run: npm i
 
-4- Download the android app and place it under app/android
+4- Download the android app and place it under app/android or app/IOS
+
+5- npm run wdioIOS/wdioAndroid
 
 ## Android setup & demo
 [![ANDROID TESTING VIDEO](https://i.ytimg.com/vi/KN1sTvvX0mM/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLCX4kTzoTmbbwAa26u5IFy1Fb0Z4A)](https://www.youtube.com/watch?v=KN1sTvvX0mM&t=2569s)
+
+
+### Extra Information
+
+[UI Selectors (Android)](https://developer.android.com/reference/androidx/test/uiautomator/UiSelector)
+[Predicate Strings Selectors (IOS)](https://appium.io/docs/en/writing-running-appium/ios/ios-predicate/)
+[Class Chain Selectors (IOS)](https://github.com/facebookarchive/WebDriverAgent/wiki/Class-Chain-Queries-Construction-Rules)
