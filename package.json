@@ -15,6 +15,7 @@
         "wdio-chromedriver-service": "^7.3.2"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdioIOS": "wdio run config/wdio-ios.conf.js",
+        "wdioAndroid": "wdio run config/wdio-android.conf.js"
     }
 }

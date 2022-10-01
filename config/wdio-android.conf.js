@@ -30,7 +30,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/ios/*.js"],
+  specs: ["./test/specs/android/*.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -59,21 +59,13 @@ exports.config = {
   //
   capabilities: [
     //ANDROID
-    // {
-        // platformName: 'Android',
-        // "appium:device-name": 'Pixel 4 API 30(R)',
-        // "appium:platformVersion": "11.0",
-        // "appium:automationName": "UIAutomator2",
-        // "appium:app": androidAppPath,
-        // // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
-    // }
-    //IOS
     {
-        platformName: 'IOS',
-        "appium:device-name": 'iPhone 13 Pro Max',
-        "appium:platformVersion": "16.0",
-        "appium:automationName": "XCUItest",
-        "appium:app": iosAppPath,   
+        platformName: 'Android',
+        "appium:device-name": 'Pixel 4 API 30(R)',
+        "appium:platformVersion": "11.0",
+        "appium:automationName": "UIAutomator2",
+        "appium:app": androidAppPath,
+        // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
     }
   ],
   //
