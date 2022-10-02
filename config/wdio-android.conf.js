@@ -3,10 +3,6 @@ const androidAppPath = projectPath.join(
   process.cwd(),
   "app/android/Android-MyDemoAppRN.1.3.0.build-244.apk"
 );
-const iosAppPath = projectPath.join(
-    process.cwd(),
-    "app/ios/MyRNDemoApp.app"
-  );
 exports.config = {
   //
   // ====================
