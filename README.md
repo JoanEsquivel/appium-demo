@@ -281,7 +281,10 @@ if you want to run this project:
 5- npm run wdioIOS/wdioAndroid
 
 ## Android setup & demo
-[![ANDROID TESTING VIDEO](https://i.ytimg.com/vi/KN1sTvvX0mM/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLCX4kTzoTmbbwAa26u5IFy1Fb0Z4A)](https://www.youtube.com/watch?v=KN1sTvvX0mM&t=2569s)
+[![ANDROID TESTING VIDEO](https://i.ytimg.com/vi/KN1sTvvX0mM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgoIVXC8QqNpzuuw9sdzSkOos1lg)](https://www.youtube.com/watch?v=KN1sTvvX0mM&t=2569s)
+
+## IOS setup & demo
+[![IOS TESTING VIDEO](https://i.ytimg.com/vi/Q5Oy8axA8Qw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoa-PxuNR5xJ0U8NM4J0sigtqwgg)](https://www.youtube.com/watch?v=Q5Oy8axA8Qw&ab_channel=JoanMedia)
 
 
 ### Extra Information
