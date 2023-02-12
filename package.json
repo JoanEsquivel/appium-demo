@@ -4,6 +4,7 @@
     "private": true,
     "devDependencies": {
         "@wdio/appium-service": "^8.3.5",
+        "@wdio/browserstack-service": "^8.3.5",
         "@wdio/cli": "^8.3.5",
         "@wdio/local-runner": "^8.3.5",
         "@wdio/mocha-framework": "^8.3.0",
@@ -14,6 +15,7 @@
     },
     "scripts": {
         "wdioAndroid": "wdio run config/android-wdio.conf.js",
-        "wdioIos": "wdio run config/ios-wdio.conf.js"
+        "wdioIos": "wdio run config/ios-wdio.conf.js",
+        "wdioBs": "wdio run config/android-bs-conf.js"
     }
 }

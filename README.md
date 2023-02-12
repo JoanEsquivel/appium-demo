@@ -297,3 +297,17 @@ if you want to run this project:
 
 ### Notes
 * To manage node versions you can install "n" using the command "npm install -g n". Then you can install the version you may need, for instance "n 16.15.1"(LTS version where this project is working fine.)
+
+
+### Browserstacks Integration
+1.  Create a new account
+2. Use the "App Automate" service. 
+3. Upload your application, and then get the ID(For demo purposes mine is: bs://9afdf50df3076e2594711e1bfe9387b855ebe09f).
+4. Have in hand your access key as well!
+5. Based on the [documentation](https://webdriver.io/docs/browserstack-service) provided by WDIO, install the BS service using the command:
+```bash
+npm install @wdio/browserstack-service --save-dev
+```
+6. Add your user, and access key to the config file.
+7. Set device name & version based on BS device list provided.
+8. You can use the NPM package dotenv to manage your credentials safely.
