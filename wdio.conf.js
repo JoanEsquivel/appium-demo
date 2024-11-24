@@ -8,6 +8,7 @@ exports.config = {
     // ====================
     // Runner Configuration
     // ====================
+    port: 4723,
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     
@@ -28,7 +29,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        '../test/specs/android/*.js'
+        './test/specs/android/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -59,7 +60,7 @@ exports.config = {
     capabilities: [{
         "platformName": 'Android',
         "appium:deviceName": 'Pixel 4 API 30(R)',
-        "appium:platformVersion": "11.0",
+        "appium:platformVersion": "11",
         "appium:automationName": "UIAutomator2",
         "appium:app": androidAppPath,
         // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
@@ -111,7 +112,15 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ["appium"],
+    services: [
+        ['appium', {
+            logPath: './logs',
+            args: {
+                relaxedSecurity: true, // permite comandos no estándar
+            },
+        }],
+    ],
+    
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

@@ -1,7 +1,7 @@
 describe("My Login Demo", () => {
   beforeEach(async () => {
     //Access the hamburguer/toggle button by its accessibility id
-    await $("~open menu").click();
+    await $("~View menu").click();
     //Access the login left menu option by its text
     await $('//*[@text="Log In"]').click();
     // await driver.pause(3000)

@@ -1,6 +1,6 @@
 class LeftSideMenuScreen {
   get expandMenuButton() {
-    return $("~open menu");
+    return $("~View menu");
   }
 
   get loginMenuOption() {
