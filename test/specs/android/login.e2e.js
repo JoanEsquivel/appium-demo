@@ -4,51 +4,71 @@ describe("My Login Demo", () => {
     await $("~View menu").click();
     //Access the login left menu option by its text
     await $('//*[@text="Log In"]').click();
-    // await driver.pause(3000)
+     await driver.pause(3000)
   });
 
-  it("should not login with invalid credentials", async () => {
-    //Access the username input element by its content-desc
-    await $('//*[@content-desc="Username input field"]').setValue("wrongUser");
-    //Access the username input element by its class + content-desc
+  //Test 1
+  it("should not login with blocked user credentials", async () => {
+    //Access the username input element 
+    //has
+    //id: com.saucelabs.mydemoapp.android:id/nameET
+    //elementId: 00000000-0000-0027-ffff-ffff0000017c
+    //-android uiatuomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/nameET")
+    //xpath: //android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/nameET"]
+    await $('//android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/nameET"]').setValue("alice@example.com"); 
+    //Access the username input element by 
+    //id: com.saucelabs.mydemoapp.android:id/passwordET
+    //elementId= 00000000-0000-0027-ffff-ffff00000181
+    //class: android.widget.EditText
+    //-android uiatuomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/passwordET")
+    //xpath: //android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/passwordET"]
     await $(
-      '//android.widget.EditText[@content-desc="Password input field"]'
-    ).setValue("wrongPassword");
+      '//android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/passwordET"]'
+    ).setValue("10203040");
     //Access the login button by the default xpath
+    //-android uiatuomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/loginBtn")
+    //xpath: //android.widget.Button[@content-desc="Tap to login with given credentials"]
     await $(
-      '//android.view.ViewGroup[@content-desc="Login button"]/android.widget.TextView'
+      '//android.widget.Button[@content-desc="Tap to login with given credentials"]'
     ).click();
     await driver.pause(3000);
 
     //Validate the error message
+    // -android uiatuomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/passwordErrorTV")
+    //xpath:  //android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/passwordErrorTV"]
     await expect(
       $(
-        '//android.view.ViewGroup[@content-desc="generic-error-message"]/android.widget.TextView'
+        '//android.widget.TextView[@resource-id="com.saucelabs.mydemoapp.android:id/passwordErrorTV"]'
       )
-    ).toHaveText("Provided credentials do not match any user in this service.");
+    ).toHaveText("Sorry this user has been locked out.");
   });
-
+  
+  //Test 2
   it("should login with valid credentials", async () => {
-    //Access the username input element by its content-desc
-    await $('//*[@content-desc="Username input field"]').setValue(
-      "bob@example.com"
+    //Access the username input element by xpath
+    await $('//android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/nameET"]').setValue(
+      "bod@example.com"
     );
-    //Access the username input element by its class + content-desc
+    //Access the password input element by xpath
     await $(
-      '//android.widget.EditText[@content-desc="Password input field"]'
+      '//android.widget.EditText[@resource-id="com.saucelabs.mydemoapp.android:id/passwordET"]'
     ).setValue("10203040");
     //Access the login button by the default xpath
     await $(
-      '//android.view.ViewGroup[@content-desc="Login button"]/android.widget.TextView'
+      '//android.widget.Button[@content-desc="Tap to login with given credentials"]'
     ).click();
-    // await driver.pause(3000);
+     await driver.pause(3000);
 
     //Access the product header element using the UISelector
     //https://webdriver.io/docs/selectors/#android-uiautomator
     //https://developer.android.com/reference/androidx/test/uiautomator/UiSelector
+
+    //android uiautomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productTV")
     const selector =
-      'new UiSelector().text("Products").className("android.widget.TextView")';
+      'new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productTV")';
     const productsUISelector = await $(`android=${selector}`);
     await expect(productsUISelector).toHaveText("Products");
   });
+
+
 });

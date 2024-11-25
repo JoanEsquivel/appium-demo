@@ -1,7 +1,7 @@
 class CatalogScreen {
   get productsHeader() {
     return $(
-      'android=new UiSelector().text("Products").className("android.widget.TextView")'
+      'android=new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productTV")'
     );
   }
 }
