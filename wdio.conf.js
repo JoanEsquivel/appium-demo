@@ -1,10 +1,14 @@
 const projectPath = require("path");
-const iosAppPath = projectPath.join(process.cwd(), "app/ios/MyRNDemoApp.app");
+const androidAppPath = projectPath.join(
+  process.cwd(),
+  "app/Android/mda-2.2.0-25.apk"
+);
 exports.config = {
     //
     // ====================
     // Runner Configuration
     // ====================
+    port: 4723,
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     
@@ -25,7 +29,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        '../test/specs/ios/*.js'
+        './test/specs/android/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,11 +58,12 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-      "platformName": "IOS",
-      "appium:deviceName": "iPhone 14 Pro Max",
-      "appium:platformVersion": "16.0",
-      "appium:automationName": "XCUItest",
-      "appium:app": iosAppPath,
+        "platformName": 'Android',
+        "appium:deviceName": 'Pixel 4 API 30(R)',
+        "appium:platformVersion": "11",
+        "appium:automationName": "UIAutomator2",
+        "appium:app": androidAppPath,
+        // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
     }],
     //
     // ===================
@@ -107,7 +112,15 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ["appium"],
+    services: [
+        ['appium', {
+            logPath: './logs',
+            args: {
+                relaxedSecurity: true, // permite comandos no estándar
+            },
+        }],
+    ],
+    
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

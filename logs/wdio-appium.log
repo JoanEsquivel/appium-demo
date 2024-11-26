@@ -1,0 +1,922 @@
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"}}[39m
+[38;5;54m[AppiumDriver@a629][0m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},null,{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"firstMatch":[{}]}]
+[38;5;54m[AppiumDriver@a629][0m Event 'newSessionRequested' logged at 1732578664477 (18:51:04 GMT-0500 (hora de Ecuador))
+[38;5;112m[Appium][0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'Android'
+[38;5;112m[Appium][0m The 'uiautomator2' driver was installed and matched caps.
+[38;5;112m[Appium][0m Will require it at C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver
+[38;5;112m[Appium][0m Requiring driver at C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\build\index.js
+[38;5;54m[AppiumDriver@a629][0m Appium v2.12.1 creating new AndroidUiautomator2Driver (v2.45.1) session
+[38;5;54m[AppiumDriver@a629][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;54m[AppiumDriver@a629][0m Appium's BaseDriver version is 9.12.1
+[38;5;54m[AppiumDriver@a629][0m AndroidUiautomator2Driver's BaseDriver version is 9.5.1
+[38;5;54m[AppiumDriver@a629][0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m Creating session with W3C capabilities: {
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m   "alwaysMatch": {
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     "platformName": "Android",
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     "appium:deviceName": "Pixel 4 API 30(R)",
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     "appium:platformVersion": "11",
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     "appium:automationName": "UIAutomator2",
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     "appium:app": "C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m   },
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m   "firstMatch": [
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m     {}
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m   ]
+[38;5;-191m[AndroidUiautomator2Driver@ba27][0m }
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Session created with session id: d571a6d6-4b1a-4f50-9ce7-00c3963450db
+[38;5;229m[ADB][0m Found 3 'build-tools' folders under 'C:\Users\leona\AppData\Local\Android\Sdk' (newest first):
+[38;5;229m[ADB][0m     C:\Users\leona\AppData\Local\Android\Sdk\build-tools\35.0.0
+[38;5;229m[ADB][0m     C:\Users\leona\AppData\Local\Android\Sdk\build-tools\34.0.0
+[38;5;229m[ADB][0m     C:\Users\leona\AppData\Local\Android\Sdk\build-tools\33.0.1
+[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Retrieving device list
+[38;5;229m[ADB][0m Trying to find connected Android devices
+[38;5;229m[ADB][0m Getting connected devices
+[38;5;229m[ADB][0m Connected devices: [{"udid":"emulator-5554","state":"device"},{"udid":"emulator-5558","state":"device"}]
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Looking for a device with Android '11.0.0'
+[38;5;229m[ADB][0m Setting device id to emulator-5554
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 12
+[38;5;229m[ADB][0m Setting device id to emulator-5558
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 11
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Using device: emulator-5558
+[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;229m[ADB][0m Setting device id to emulator-5558
+[38;5;123m[BaseDriver][0m Using local app 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Checking whether app is actually present
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.sdk'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.sdk': 30
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 11
+[38;5;229m[ADB][0m Device API level: 30
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Relaxing hidden api policy
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Parsing package and activity from app manifest
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 wait-for-device'
+[38;5;229m[ADB][0m Package name: 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Main activity name: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Parsed package and activity are: com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell echo ping'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Pushing settings apk to the device...
+[38;5;229m[ADB][0m Getting package info for 'io.appium.settings'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package io.appium.settings'
+[38;5;229m[ADB][0m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.7.5' >= '5.7.5')
+[38;5;229m[ADB][0m There is no need to install/upgrade 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys activity services io.appium.settings'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m io.appium.settings is already running. There is no need to reset its permissions.
+[38;5;160m[Logcat][0m Starting logs capture with command: C:\\Users\\leona\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5558 logcat -v threadtime
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Forwarding UiAutomator2 Server port 6790 to local port 8201
+[38;5;229m[ADB][0m Forwarding system: 8201 to device: 6790
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 forward tcp:8201 tcp:6790'
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.9.apk
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[38;5;229m[ADB][0m Using 'apksigner.jar' from 'C:\Users\leona\AppData\Local\Android\Sdk\build-tools\35.0.0\lib\apksigner.jar'
+[38;5;229m[ADB][0m Starting apksigner: 'C:\\Program Files\\Java\\jdk-23\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\leona\\AppData\\Local\\Android\\Sdk\\build-tools\\35.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+[38;5;229m[ADB][0m Starting apksigner: 'C:\\Program Files\\Java\\jdk-23\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\leona\\AppData\\Local\\Android\\Sdk\\build-tools\\35.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v6.0.9.apk
+[38;5;229m[ADB][0m Starting apksigner: 'C:\\Program Files\\Java\\jdk-23\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\leona\\AppData\\Local\\Android\\Sdk\\build-tools\\35.0.0\\lib\\apksigner.jar verify --print-certs C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk
+[38;5;229m[ADB][0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[38;5;229m[ADB][0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[38;5;229m[ADB][0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[38;5;229m[ADB][0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[38;5;229m[ADB][0m 
+[38;5;229m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;229m[ADB][0m 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[38;5;229m[ADB][0m Getting install status for io.appium.uiautomator2.server.test
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm path io.appium.uiautomator2.server.test'
+[38;5;229m[ADB][0m 'io.appium.uiautomator2.server.test' is installed
+[38;5;229m[ADB][0m apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+[38;5;229m[ADB][0m Signer #1 certificate SHA-256 digest: 67f24a8580c5a51a486665d8ba424e0a1e6cbc50cad62510203bb081528e5462
+[38;5;229m[ADB][0m Signer #1 certificate SHA-1 digest: ff35ac25c5e0d7c01417b9c5caf03eb91b1b8b46
+[38;5;229m[ADB][0m Signer #1 certificate MD5 digest: 751bac5bd0777c9b9a879825e99a4112
+[38;5;229m[ADB][0m 
+[38;5;229m[ADB][0m 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk' is signed with a non-default certificate
+[38;5;229m[ADB][0m Getting package info for 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m The version name of the installed 'com.saucelabs.mydemoapp.android' is greater or equal to the application version name ('2.2.0' >= '2.2.0')
+[38;5;229m[ADB][0m There is no need to install/upgrade 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Performing fast reset on 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Getting install status for com.saucelabs.mydemoapp.android
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm path com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[38;5;229m[ADB][0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[38;5;229m[ADB][0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[38;5;229m[ADB][0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[38;5;229m[ADB][0m 
+[38;5;229m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-v6.0.9.apk'
+[38;5;229m[ADB][0m 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.9.apk' is signed with the default certificate
+[38;5;229m[ADB][0m Getting package info for 'io.appium.uiautomator2.server'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package io.appium.uiautomator2.server'
+[38;5;229m[ADB][0m 'com.saucelabs.mydemoapp.android' is installed
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm clear com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('6.0.9' >= '6.0.9')
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Server packages status: [{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v6.0.9.apk","appId":"io.appium.uiautomator2.server"},{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Server packages are not going to be (re)installed
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Waiting up to 30000ms for services to be available
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm list instrumentation'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[38;5;229m[ADB][0m Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Performed fast reset on the installed 'com.saucelabs.mydemoapp.android' application (stop and clear)
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Performing shallow cleanup of automation leftovers
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m No obsolete sessions have been detected (socket hang up)
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop io.appium.uiautomator2.server.test'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Starting UIAutomator2 server 6.0.9
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Using UIAutomator2 server from 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.9.apk' and test from 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[38;5;229m[ADB][0m Creating ADB subprocess with args: ["-P","5037","-s","emulator-5558","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;74m[Instrumentation][0m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m socket hang up
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/status' to command name 'getStatus'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m The initialization of the instrumentation process took 7465ms
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/session' to command name 'createSession'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [POST /session] to [POST http://127.0.0.1:8201/session] with body: {"capabilities":{"firstMatch":[{"platformName":"Android","deviceName":"emulator-5558","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Pixel 4 API 30(R)","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"deviceUDID":"emulator-5558","appPackage":"com.saucelabs.mydemoapp.android"}],"alwaysMatch":{}}}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":{"capabilities":{"firstMatch":[{"platformName":"Android","deviceName":"emulator-5558","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Pixel 4 API 30(R)","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"deviceUDID":"emulator-5558","appPackage":"com.saucelabs.mydemoapp.android"}],"alwaysMatch":{}},"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e"}}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Determined the downstream protocol as 'W3C'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/session/e07158de-7456-413f-b9e7-5fee7321235e/appium/device/pixel_ratio] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/session/e07158de-7456-413f-b9e7-5fee7321235e/appium/device/system_bars] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/window/current/size' to command name 'getWindowSize'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/session/e07158de-7456-413f-b9e7-5fee7321235e/window/current/size] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/session/e07158de-7456-413f-b9e7-5fee7321235e/appium/device/info] with no body
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":2.75}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":{"height":2280,"width":1080}}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":{"statusBar":135}}
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":{"androidId":"71a2b5913dad15dc","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"google","carrierName":"Android","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone_x86","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":141000,"linkUpstreamBandwidthKbps":141000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-30,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabiliti...
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Screen already unlocked, doing nothing
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Starting 'com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity and waiting for 'com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am start -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[38;5;229m[ADB][0m Waiting up to 20000ms for activity matching pkg: 'com.saucelabs.mydemoapp.android' and activity: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' to be focused
+[38;5;229m[ADB][0m Possible activities, to be checked: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity', 'com.saucelabs.mydemoapp.android.com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.MainActivity'
+[38;5;229m[ADB][0m Incorrect package and activity. Retrying.
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Deleting UiAutomator2 session
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Deleting UiAutomator2 server session
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Matched '/' to command name 'deleteSession'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/session/e07158de-7456-413f-b9e7-5fee7321235e] with no body
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Got response with status 200: {"sessionId":"e07158de-7456-413f-b9e7-5fee7321235e","value":null}
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop com.saucelabs.mydemoapp.android'
+[38;5;160m[Logcat][0m Stopping logcat capture
+[38;5;229m[ADB][0m Removing forwarded port socket connection: 8201 
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 forward --remove tcp:8201'
+[38;5;118m[AndroidUiautomator2Driver@ba27 (d571a6d6)][0m Restoring hidden api policy to the device default configuration
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[38;5;54m[AppiumDriver@a629][0m Event 'newSessionStarted' logged at 1732578699657 (18:51:39 GMT-0500 (hora de Ecuador))
+[38;5;54m[AppiumDriver@a629][0m Encountered internal error running command: Error: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' or 'com.saucelabs.mydemoapp.android.com.saucelabs.mydemoapp.android.view.activities.SplashActivity' never started. Consider checking the driver's troubleshooting documentation.
+    at ADB.startApp (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\lib\tools\apk-utils.js:189:11)
+    at AndroidUiautomator2Driver.ensureAppStarts (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\lib\driver.ts:826:5)
+    at AndroidUiautomator2Driver.performSessionPostExecSetup (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\lib\driver.ts:649:7)
+    at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\lib\driver.ts:697:5)
+    at AndroidUiautomator2Driver.createSession (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\lib\driver.ts:419:22)
+    at AppiumDriver.createSession (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium\lib\appium.js:739:35)
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[31m500[39m [90m35221 ms - 1336[39m [90m[39m
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"}}[39m
+[38;5;54m[AppiumDriver@a629][0m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},null,{"alwaysMatch":{"platformName":"Android","appium:deviceName":"Pixel 4 API 30(R)","appium:platformVersion":"11","appium:automationName":"UIAutomator2","appium:app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"firstMatch":[{}]}]
+[38;5;54m[AppiumDriver@a629][0m Event 'newSessionRequested' logged at 1732578699826 (18:51:39 GMT-0500 (hora de Ecuador))
+[38;5;112m[Appium][0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'Android'
+[38;5;112m[Appium][0m The 'uiautomator2' driver was installed and matched caps.
+[38;5;112m[Appium][0m Will require it at C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver
+[38;5;112m[Appium][0m Requiring driver at C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\build\index.js
+[38;5;54m[AppiumDriver@a629][0m Appium v2.12.1 creating new AndroidUiautomator2Driver (v2.45.1) session
+[38;5;54m[AppiumDriver@a629][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;54m[AppiumDriver@a629][0m Appium's BaseDriver version is 9.12.1
+[38;5;54m[AppiumDriver@a629][0m AndroidUiautomator2Driver's BaseDriver version is 9.5.1
+[38;5;54m[AppiumDriver@a629][0m Applying relaxed security to 'AndroidUiautomator2Driver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m Creating session with W3C capabilities: {
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m   "alwaysMatch": {
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     "platformName": "Android",
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     "appium:deviceName": "Pixel 4 API 30(R)",
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     "appium:platformVersion": "11",
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     "appium:automationName": "UIAutomator2",
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     "appium:app": "C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m   },
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m   "firstMatch": [
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m     {}
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m   ]
+[38;5;-162m[AndroidUiautomator2Driver@a413][0m }
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Session created with session id: c573da69-b085-4047-b7eb-4ccf6d46d0d1
+[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Retrieving device list
+[38;5;229m[ADB][0m Trying to find connected Android devices
+[38;5;229m[ADB][0m Getting connected devices
+[38;5;229m[ADB][0m Connected devices: [{"udid":"emulator-5554","state":"device"},{"udid":"emulator-5558","state":"device"}]
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Looking for a device with Android '11.0.0'
+[38;5;229m[ADB][0m Setting device id to emulator-5554
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 12
+[38;5;229m[ADB][0m Setting device id to emulator-5558
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 11
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Using device: emulator-5558
+[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;229m[ADB][0m Setting device id to emulator-5558
+[38;5;123m[BaseDriver][0m Using local app 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Checking whether app is actually present
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.sdk'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.sdk': 30
+[38;5;229m[ADB][0m Getting device platform version
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell getprop ro.build.version.release'
+[38;5;229m[ADB][0m Current device property 'ro.build.version.release': 11
+[38;5;229m[ADB][0m Device API level: 30
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Relaxing hidden api policy
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Parsing package and activity from app manifest
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 wait-for-device'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell echo ping'
+[38;5;229m[ADB][0m Package name: 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Main activity name: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Parsed package and activity are: com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Pushing settings apk to the device...
+[38;5;229m[ADB][0m Getting package info for 'io.appium.settings'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package io.appium.settings'
+[38;5;74m[Instrumentation][0m .
+[38;5;74m[Instrumentation][0m Time: 26.289
+[38;5;74m[Instrumentation][0m 
+[38;5;74m[Instrumentation][0m OK (1 test)
+[38;5;229m[ADB][0m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.7.5' >= '5.7.5')
+[38;5;229m[ADB][0m There is no need to install/upgrade 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys activity services io.appium.settings'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m io.appium.settings is already running. There is no need to reset its permissions.
+[38;5;160m[Logcat][0m Starting logs capture with command: C:\\Users\\leona\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5558 logcat -v threadtime
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Forwarding UiAutomator2 Server port 6790 to local port 8201
+[38;5;229m[ADB][0m Forwarding system: 8201 to device: 6790
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 forward tcp:8201 tcp:6790'
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.9.apk
+[38;5;229m[ADB][0m Checking app cert for C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[38;5;229m[ADB][0m Using the previously cached signature entry for 'appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;229m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;229m[ADB][0m Getting install status for io.appium.uiautomator2.server.test
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm path io.appium.uiautomator2.server.test'
+[38;5;229m[ADB][0m Using the previously cached signature entry for 'appium-uiautomator2-server-v6.0.9.apk'
+[38;5;229m[ADB][0m sha256 hash did match for 'appium-uiautomator2-server-v6.0.9.apk'
+[38;5;229m[ADB][0m Getting package info for 'io.appium.uiautomator2.server'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package io.appium.uiautomator2.server'
+[38;5;229m[ADB][0m 'io.appium.uiautomator2.server.test' is installed
+[38;5;229m[ADB][0m Using the previously cached signature entry for 'mda-2.2.0-25.apk'
+[38;5;229m[ADB][0m Getting package info for 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys package com.saucelabs.mydemoapp.android'
+[38;5;74m[Instrumentation][0m The process has exited with code 0
+[38;5;229m[ADB][0m The version name of the installed 'com.saucelabs.mydemoapp.android' is greater or equal to the application version name ('2.2.0' >= '2.2.0')
+[38;5;229m[ADB][0m There is no need to install/upgrade 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\app\Android\mda-2.2.0-25.apk'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Performing fast reset on 'com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Getting install status for com.saucelabs.mydemoapp.android
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm path com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m 'com.saucelabs.mydemoapp.android' is installed
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop com.saucelabs.mydemoapp.android'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm clear com.saucelabs.mydemoapp.android'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Performed fast reset on the installed 'com.saucelabs.mydemoapp.android' application (stop and clear)
+[38;5;229m[ADB][0m The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('6.0.9' >= '6.0.9')
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Server packages status: [{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v6.0.9.apk","appId":"io.appium.uiautomator2.server"},{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Server packages are not going to be (re)installed
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 30000ms for services to be available
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell pm list instrumentation'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[38;5;229m[ADB][0m Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Performing shallow cleanup of automation leftovers
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m No obsolete sessions have been detected (socket hang up)
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop io.appium.uiautomator2.server.test'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Starting UIAutomator2 server 6.0.9
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Using UIAutomator2 server from 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v6.0.9.apk' and test from 'C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[38;5;229m[ADB][0m Creating ADB subprocess with args: ["-P","5037","-s","emulator-5558","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/status' to command name 'getStatus'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m socket hang up
+[38;5;74m[Instrumentation][0m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/status' to command name 'getStatus'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m socket hang up
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/status' to command name 'getStatus'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /status] to [GET http://127.0.0.1:8201/status] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m The initialization of the instrumentation process took 2154ms
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/session' to command name 'createSession'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /session] to [POST http://127.0.0.1:8201/session] with body: {"capabilities":{"firstMatch":[{"platformName":"Android","deviceName":"emulator-5558","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Pixel 4 API 30(R)","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"deviceUDID":"emulator-5558","appPackage":"com.saucelabs.mydemoapp.android"}],"alwaysMatch":{}}}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"capabilities":{"firstMatch":[{"platformName":"Android","deviceName":"emulator-5558","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Pixel 4 API 30(R)","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"deviceUDID":"emulator-5558","appPackage":"com.saucelabs.mydemoapp.android"}],"alwaysMatch":{}},"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a"}}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Determined the downstream protocol as 'W3C'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/appium/device/pixel_ratio] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/appium/device/system_bars] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/window/current/size' to command name 'getWindowSize'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/window/current/size] with no body
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/appium/device/info] with no body
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window'
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":2.75}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"statusBar":135}}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"height":2280,"width":1080}}
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"androidId":"71a2b5913dad15dc","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"google","carrierName":"Android","displayDensity":440,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone_x86","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":141000,"linkUpstreamBandwidthKbps":141000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-30,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"networkCapabiliti...
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Screen already unlocked, doing nothing
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Starting 'com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity and waiting for 'com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am start -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[38;5;229m[ADB][0m Waiting up to 20000ms for activity matching pkg: 'com.saucelabs.mydemoapp.android' and activity: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' to be focused
+[38;5;229m[ADB][0m Possible activities, to be checked: 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity', 'com.saucelabs.mydemoapp.android.com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;229m[ADB][0m Getting focused package and activity
+[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys window displays'
+[38;5;229m[ADB][0m Found package: 'com.saucelabs.mydemoapp.android' and fully qualified activity name : 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity'
+[38;5;54m[AppiumDriver@a629][0m New AndroidUiautomator2Driver session created successfully, session c573da69-b085-4047-b7eb-4ccf6d46d0d1 added to master session list
+[38;5;54m[AppiumDriver@a629][0m Event 'newSessionStarted' logged at 1732578705653 (18:51:45 GMT-0500 (hora de Ecuador))
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Cached the protocol value 'W3C' for the new session c573da69-b085-4047-b7eb-4ccf6d46d0d1
+[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.createSession() result: {"capabilities":{"platformName":"Android","deviceName":"emulator-5558","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Pixel 4 API 30(R)","platformVersion":"11","automationName":"UIAutomator2","app":"C:\\Users\\leona\\OneDrive\\Escritorio\\TestAppium\\appium-demo\\app\\Android\\mda-2.2.0-25.apk"},"deviceUDID":"emulator-5558","appPackage":"com.saucelabs.mydemoapp.android","pixelRatio":"2.75","statBarHeight":135,"viewportRect":{"left":0,"top":135,"width":1080,"height":2145},"deviceApiLevel":30,"deviceManufacturer":"Google","deviceModel":"sdk_gphone_x86","deviceScreenSize":"1080x2280","deviceScreenDensity":440}}
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[32m200[39m [90m5830 ms - 1032[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"accessibility id","value":"View menu"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["accessibility id","View menu","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"accessibility id","selector":"View menu","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 404: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[38;5;218m[c573da69][0m[38;5;123m[W3C][0m Matched W3C error code 'no such element' to NoSuchElementError
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElement (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[33m404[39m [90m766 ms - 1017[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"accessibility id","value":"View menu"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["accessibility id","View menu","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"accessibility id","selector":"View menu","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[{"ELEMENT":"00000000-0000-0033-ffff-ffff00000013","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000013"}]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000013","ELEMENT":"00000000-0000-0033-ffff-ffff00000013"}]
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m991 ms - 139[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"accessibility id","value":"View menu"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["accessibility id","View menu","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"accessibility id","selector":"View menu","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0033-ffff-ffff00000013","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000013"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000013","ELEMENT":"00000000-0000-0033-ffff-ffff00000013"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m410 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0033-ffff-ffff00000013/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0033-ffff-ffff00000013","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0033-ffff-ffff00000013/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0033-ffff-ffff00000013/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0033-ffff-ffff00000013/click] with body: {"element":"00000000-0000-0033-ffff-ffff00000013"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0033-ffff-ffff00000013/click [39m[32m200[39m [90m1004 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//*[@text=\"Log In\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//*[@text=\"Log In\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//*[@text=\"Log In\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0033-ffff-ffff00000059","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000059"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0033-ffff-ffff00000059","ELEMENT":"00000000-0000-0033-ffff-ffff00000059"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m750 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0033-ffff-ffff00000059/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0033-ffff-ffff00000059","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0033-ffff-ffff00000059/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0033-ffff-ffff00000059/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0033-ffff-ffff00000059/click] with body: {"element":"00000000-0000-0033-ffff-ffff00000059"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0033-ffff-ffff00000059/click [39m[32m200[39m [90m104 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 404: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.utils.ElementLocationHelpers.findElement(ElementLocationHelpers.java:156)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:60)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.Abstr...
+[38;5;218m[c573da69][0m[38;5;123m[W3C][0m Matched W3C error code 'no such element' to NoSuchElementError
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElement (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[33m404[39m [90m543 ms - 1017[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff0000017c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff0000017c"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff0000017c","ELEMENT":"00000000-0000-0034-ffff-ffff0000017c"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m988 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000017c/clear[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.clear() with args: ["00000000-0000-0034-ffff-ffff0000017c","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff0000017c/clear' to command name 'clear'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff0000017c/clear] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff0000017c/clear] with body: {"elementId":"00000000-0000-0034-ffff-ffff0000017c"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m498 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.clear() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000017c/clear [39m[32m200[39m [90m74 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000017c/value[39m [90m{"text":"alice@example.com"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.setValue() with args: ["alice@example.com","00000000-0000-0034-ffff-ffff0000017c","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff0000017c/value' to command name 'setValue'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Added 'value' property ["a","l","i","c","e","@","e","x","a","m","p","l","e",".","c","o","m"] to 'setValue' request body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff0000017c/value] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff0000017c/value] with body: {"elementId":"00000000-0000-0034-ffff-ffff0000017c","text":"alice@example.com","replace":false,"value":["a","l","i","c","e","@","e","x","a","m","p","l","e",".","c","o","m"]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m535 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.setValue() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000017c/value [39m[32m200[39m [90m599 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m590 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff00000181","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000181"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000181","ELEMENT":"00000000-0000-0034-ffff-ffff00000181"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m565 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000181/clear[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.clear() with args: ["00000000-0000-0034-ffff-ffff00000181","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff00000181/clear' to command name 'clear'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff00000181/clear] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff00000181/clear] with body: {"elementId":"00000000-0000-0034-ffff-ffff00000181"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m86 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.clear() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000181/clear [39m[32m200[39m [90m62 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000181/value[39m [90m{"text":"10203040"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.setValue() with args: ["10203040","00000000-0000-0034-ffff-ffff00000181","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff00000181/value' to command name 'setValue'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Added 'value' property ["1","0","2","0","3","0","4","0"] to 'setValue' request body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff00000181/value] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff00000181/value] with body: {"elementId":"00000000-0000-0034-ffff-ffff00000181","text":"10203040","replace":false,"value":["1","0","2","0","3","0","4","0"]}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.setValue() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000181/value [39m[32m200[39m [90m529 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m810 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff00000186","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000186"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000186","ELEMENT":"00000000-0000-0034-ffff-ffff00000186"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m579 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000186/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0034-ffff-ffff00000186","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff00000186/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff00000186/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff00000186/click] with body: {"element":"00000000-0000-0034-ffff-ffff00000186"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m94 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000186/click [39m[32m200[39m [90m613 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[{"ELEMENT":"00000000-0000-0034-ffff-ffff00000183","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000183"}]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000183","ELEMENT":"00000000-0000-0034-ffff-ffff00000183"}]
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m536 ms - 139[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordErrorTV\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff00000183","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000183"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff00000183","ELEMENT":"00000000-0000-0034-ffff-ffff00000183"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m44 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000183/text[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000183/text' to command name 'getText'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000183/text] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff00000183/text] with no body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":"Sorry this user has been locked out."}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Replacing sessionId 8eea3169-92ba-442f-8543-fa5e9b41e24a with c573da69-b085-4047-b7eb-4ccf6d46d0d1
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- GET /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff00000183/text [39m[32m200[39m [90m18 ms - 99[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"accessibility id","value":"View menu"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["accessibility id","View menu","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"accessibility id","selector":"View menu","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff0000016c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff0000016c"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff0000016c","ELEMENT":"00000000-0000-0034-ffff-ffff0000016c"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m22 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000016c/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0034-ffff-ffff0000016c","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff0000016c/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff0000016c/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff0000016c/click] with body: {"element":"00000000-0000-0034-ffff-ffff0000016c"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff0000016c/click [39m[32m200[39m [90m963 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//*[@text=\"Log In\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//*[@text=\"Log In\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//*[@text=\"Log In\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0034-ffff-ffff000001be","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff000001be"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0034-ffff-ffff000001be","ELEMENT":"00000000-0000-0034-ffff-ffff000001be"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m88 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff000001be/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0034-ffff-ffff000001be","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0034-ffff-ffff000001be/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0034-ffff-ffff000001be/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0034-ffff-ffff000001be/click] with body: {"element":"00000000-0000-0034-ffff-ffff000001be"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0034-ffff-ffff000001be/click [39m[32m200[39m [90m862 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 404: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[38;5;218m[c573da69][0m[38;5;123m[W3C][0m Matched W3C error code 'no such element' to NoSuchElementError
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m     at AndroidUiautomator2Driver.findElement (C:\Users\leona\OneDrive\Escritorio\TestAppium\appium-demo\node_modules\appium-uiautomator2-driver\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[33m404[39m [90m28 ms - 1017[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0035-ffff-ffff000001d9","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001d9"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001d9","ELEMENT":"00000000-0000-0035-ffff-ffff000001d9"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m65 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001d9/clear[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.clear() with args: ["00000000-0000-0035-ffff-ffff000001d9","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0035-ffff-ffff000001d9/clear' to command name 'clear'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0035-ffff-ffff000001d9/clear] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0035-ffff-ffff000001d9/clear] with body: {"elementId":"00000000-0000-0035-ffff-ffff000001d9"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m60 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.clear() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001d9/clear [39m[32m200[39m [90m48 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001d9/value[39m [90m{"text":"bob@example.com"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.setValue() with args: ["bob@example.com","00000000-0000-0035-ffff-ffff000001d9","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0035-ffff-ffff000001d9/value' to command name 'setValue'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Added 'value' property ["b","o","b","@","e","x","a","m","p","l","e",".","c","o","m"] to 'setValue' request body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0035-ffff-ffff000001d9/value] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0035-ffff-ffff000001d9/value] with body: {"elementId":"00000000-0000-0035-ffff-ffff000001d9","text":"bob@example.com","replace":false,"value":["b","o","b","@","e","x","a","m","p","l","e",".","c","o","m"]}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.setValue() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001d9/value [39m[32m200[39m [90m517 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m607 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0035-ffff-ffff000001de","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001de"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001de","ELEMENT":"00000000-0000-0035-ffff-ffff000001de"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m556 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001de/clear[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.clear() with args: ["00000000-0000-0035-ffff-ffff000001de","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0035-ffff-ffff000001de/clear' to command name 'clear'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0035-ffff-ffff000001de/clear] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0035-ffff-ffff000001de/clear] with body: {"elementId":"00000000-0000-0035-ffff-ffff000001de"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m57 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.clear() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001de/clear [39m[32m200[39m [90m142 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001de/value[39m [90m{"text":"10203040"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.setValue() with args: ["10203040","00000000-0000-0035-ffff-ffff000001de","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0035-ffff-ffff000001de/value' to command name 'setValue'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Added 'value' property ["1","0","2","0","3","0","4","0"] to 'setValue' request body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0035-ffff-ffff000001de/value] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0035-ffff-ffff000001de/value] with body: {"elementId":"00000000-0000-0035-ffff-ffff000001de","text":"10203040","replace":false,"value":["1","0","2","0","3","0","4","0"]}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.setValue() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001de/value [39m[32m200[39m [90m517 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"xpath","value":"//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"xpath","selector":"//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m835 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0035-ffff-ffff000001e3","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001e3"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0035-ffff-ffff000001e3","ELEMENT":"00000000-0000-0035-ffff-ffff000001e3"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m562 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001e3/click[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.click() with args: ["00000000-0000-0035-ffff-ffff000001e3","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element/00000000-0000-0035-ffff-ffff000001e3/click' to command name 'click'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element/00000000-0000-0035-ffff-ffff000001e3/click] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0035-ffff-ffff000001e3/click] with body: {"element":"00000000-0000-0035-ffff-ffff000001e3"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: []
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m63 ms - 12[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.click() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0035-ffff-ffff000001e3/click [39m[32m200[39m [90m86 ms - 14[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/elements' to command name 'findElements'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /elements] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":true}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":[{"ELEMENT":"00000000-0000-0037-ffff-ffff00000231","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0037-ffff-ffff00000231"}]}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0037-ffff-ffff00000231","ELEMENT":"00000000-0000-0037-ffff-ffff00000231"}]
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/elements [39m[32m200[39m [90m1697 ms - 139[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element[39m [90m{"using":"-android uiautomator","value":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")"}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Waiting up to 0 ms for condition
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/element' to command name 'findElement'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [POST /element] to [POST http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productTV\")","context":"","multiple":false}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":{"ELEMENT":"00000000-0000-0037-ffff-ffff00000231","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0037-ffff-ffff00000231"}}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0037-ffff-ffff00000231","ELEMENT":"00000000-0000-0037-ffff-ffff00000231"}
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- POST /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element [39m[32m200[39m [90m39 ms - 137[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0037-ffff-ffff00000231/text[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0037-ffff-ffff00000231/text' to command name 'getText'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [GET /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0037-ffff-ffff00000231/text] to [GET http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a/element/00000000-0000-0037-ffff-ffff00000231/text] with no body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":"Products"}
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Replacing sessionId 8eea3169-92ba-442f-8543-fa5e9b41e24a with c573da69-b085-4047-b7eb-4ccf6d46d0d1
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- GET /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1/element/00000000-0000-0037-ffff-ffff00000231/text [39m[32m200[39m [90m31 ms - 71[39m [90m[39m
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/session/c573da69-b085-4047-b7eb-4ccf6d46d0d1[39m [90m{}[39m
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Calling AppiumDriver.deleteSession() with args: ["c573da69-b085-4047-b7eb-4ccf6d46d0d1"]
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m Event 'quitSessionRequested' logged at 1732578720253 (18:52:00 GMT-0500 (hora de Ecuador))
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m Removing session c573da69-b085-4047-b7eb-4ccf6d46d0d1 from our master session list
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Deleting UiAutomator2 session
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Deleting UiAutomator2 server session
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Matched '/' to command name 'deleteSession'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/session/8eea3169-92ba-442f-8543-fa5e9b41e24a] with no body
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Got response with status 200: {"sessionId":"8eea3169-92ba-442f-8543-fa5e9b41e24a","value":null}
+[38;5;218m[c573da69][0m[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+[38;5;218m[c573da69][0m[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell am force-stop com.saucelabs.mydemoapp.android'
+[38;5;74m[Instrumentation][0m .
+[38;5;218m[c573da69][0m[38;5;160m[Logcat][0m Stopping logcat capture
+[38;5;218m[c573da69][0m[38;5;229m[ADB][0m Removing forwarded port socket connection: 8201 
+[38;5;218m[c573da69][0m[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 forward --remove tcp:8201'
+[38;5;218m[c573da69][0m[38;5;97m[AndroidUiautomator2Driver@a413 (c573da69)][0m Restoring hidden api policy to the device default configuration
+[38;5;218m[c573da69][0m[38;5;229m[ADB][0m Running 'C:\Users\leona\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5558 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+[38;5;74m[Instrumentation][0m Time: 18.083
+[38;5;74m[Instrumentation][0m 
+[38;5;74m[Instrumentation][0m OK (1 test)
+[38;5;74m[Instrumentation][0m The process has exited with code 0
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m Event 'quitSessionFinished' logged at 1732578720958 (18:52:00 GMT-0500 (hora de Ecuador))
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m Received response: null
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m But deleting session, so not returning
+[38;5;218m[c573da69][0m[38;5;54m[AppiumDriver@a629][0m Responding to client with driver.deleteSession() result: null
+[38;5;218m[c573da69][0m[38;5;86m[HTTP][0m [37m<-- DELETE /session/c573da69-b085-4047-b7eb-4ccf6d46d0d1 [39m[32m200[39m [90m706 ms - 14[39m [90m[39m
