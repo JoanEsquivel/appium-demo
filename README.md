@@ -177,6 +177,15 @@ Run the commands:
 appium driver install xcuitest
 appium driver install uiautomator2
 ```
+If you need to update them for Appium 3:
+```bash 
+appium driver uninstall xcuitest
+appium driver uninstall uiautomator2
+
+appium driver install xcuitest
+appium driver install uiautomator2
+
+```
 Check the installed drivers using
 ```bash 
 appium driver list
