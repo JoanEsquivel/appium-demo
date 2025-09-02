@@ -1,7 +1,7 @@
 const projectPath = require("path");
 const androidAppPath = projectPath.join(
-  process.cwd(),
-  "app/android/Android-MyDemoAppRN.1.3.0.build-244.apk"
+    process.cwd(),
+    "app/android/android.wdio.native.app.v1.0.8.apk"
 );
 exports.config = {
     //
@@ -10,7 +10,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -58,8 +58,8 @@ exports.config = {
     //
     capabilities: [{
         "platformName": 'Android',
-        "appium:deviceName": 'Pixel 4 API 30(R)',
-        "appium:platformVersion": "11.0",
+        "appium:deviceName": 'Pixel 9 Pro XL',
+        "appium:platformVersion": "16",
         "appium:automationName": "UIAutomator2",
         "appium:app": androidAppPath,
         // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
@@ -136,7 +136,7 @@ exports.config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

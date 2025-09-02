@@ -1,5 +1,5 @@
 const projectPath = require("path");
-const iosAppPath = projectPath.join(process.cwd(), "app/ios/MyRNDemoApp.app");
+const iosAppPath = projectPath.join(process.cwd(), "app/ios/wdiodemoapp.app");
 exports.config = {
     //
     // ====================
@@ -7,7 +7,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     //
     // ==================
     // Specify Test Files
@@ -54,11 +54,11 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-      "platformName": "IOS",
-      "appium:deviceName": "iPhone 14 Pro Max",
-      "appium:platformVersion": "16.0",
-      "appium:automationName": "XCUItest",
-      "appium:app": iosAppPath,
+        "platformName": "IOS",
+        "appium:deviceName": "iPhone 16 Pro",
+        "appium:platformVersion": "18.4",
+        "appium:automationName": "XCUItest",
+        "appium:app": iosAppPath,
     }],
     //
     // ===================
@@ -132,7 +132,7 @@ exports.config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
