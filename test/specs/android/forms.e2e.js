@@ -1,4 +1,4 @@
-describe("My Login Demo", () => {
+describe("Forms test suite", () => {
   beforeEach(async () => {
     // Tap new" command -> https://webdriver.io/docs/api/mobile/tap
     await $("~Forms").tap();
