@@ -11,7 +11,8 @@
         "@wdio/spec-reporter": "^9.19.2",
         "appium": "^3.0.1",
         "appium-uiautomator2-driver": "^5.0.0",
-        "appium-xcuitest-driver": "^10.0.4"
+        "appium-xcuitest-driver": "^10.0.4",
+        "dotenv": "^16.3.1"
     },
     "scripts": {
         "wdioAndroid": "wdio run config/android-wdio.conf.js",

@@ -1,11 +1,13 @@
+require('dotenv').config();
+
 // const projectPath = require("path");
 // const androidAppPath = projectPath.join(
 //     process.cwd(),
 //     "app/android/android.wdio.native.app.v1.0.8.apk"
 // );
 exports.config = {
-    user: "",
-    key: "",
+    user: process.env.BROWSERSTACK_USER,
+    key: process.env.BROWSERSTACK_KEY,
     //
     // ====================
     // Runner Configuration
@@ -63,7 +65,7 @@ exports.config = {
         "appium:deviceName": 'Samsung Galaxy S23 Ultra',
         "appium:platformVersion": "13.0",
         "appium:automationName": "UIAutomator2",
-        "appium:app": '',
+        "appium:app": process.env.BROWSERSTACK_APP,
         // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
     }],
     //

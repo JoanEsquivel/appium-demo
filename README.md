@@ -310,14 +310,189 @@ if you want to run this project:
 ### Browserstacks Integration
 1.  Create a new account
 2. Use the "App Automate" service. 
-3. Upload your application, and then get the ID(For demo purposes mine is: bs://9afdf50df3076e2594711e1bfe9387b855ebe09f).
+3. Upload your application, and then get the ID.
 4. Have in hand your access key as well!
 5. Based on the [documentation](https://webdriver.io/docs/browserstack-service) provided by WDIO, install the BS service using the command:
 ```bash
 npm install @wdio/browserstack-service --save-dev
 ```
-6. Add your user, and access key to the config file.
-7. Set device name & version based on BS device list provided.
-8. You can use the NPM package dotenv to manage your credentials safely.
+6. **Create environment variables for your credentials** (NEVER hardcode them in config files):
+   - Copy `.env.example` to `.env`: `cp .env.example .env`
+   - Update `.env` with your actual BrowserStack credentials:
+     ```env
+     BROWSERSTACK_USER=your_browserstack_username
+     BROWSERSTACK_KEY=your_browserstack_access_key  
+     BROWSERSTACK_APP=bs://your_uploaded_app_id
+     ```
+   - The `.env` file is already in `.gitignore` and won't be committed to the repository
+7. Set device name & version based on BS device list provided in the config file.
+8. For CI/CD (GitHub Actions), add the same variables as repository secrets:
+   - Go to **Settings** → **Secrets and variables** → **Actions**
+   - Add `BROWSERSTACK_USER`, `BROWSERSTACK_KEY`, and `BROWSERSTACK_APP` secrets
 
 Note: Check their capability builder: https://www.browserstack.com/docs/app-automate/capabilities
+
+## GitHub Actions CI/CD - BrowserStack Integration
+
+This project includes a GitHub Actions workflow that automatically runs your BrowserStack Android tests on every push and pull request. The workflow is configured to provide fast feedback and detailed reporting.
+
+### 🚀 Workflow Features
+
+The BrowserStack GitHub Actions workflow (`.github/workflows/browserstack-android.yaml`) provides:
+
+- **Automated Testing**: Runs on push/PR to `main` and `develop` branches
+- **Manual Triggering**: Can be triggered manually from the GitHub Actions tab
+- **Optimized Performance**: Uses npm caching for faster builds
+- **Comprehensive Logging**: Automatically uploads test logs and performance reports
+- **Failure Handling**: Detailed artifacts when tests fail
+
+### 🔐 Required GitHub Secrets
+
+To run BrowserStack tests in GitHub Actions, you need to configure the following repository secrets:
+
+1. Go to your GitHub repository
+2. Navigate to **Settings** → **Secrets and variables** → **Actions**
+3. Click **"New repository secret"** and add each of the following:
+
+| Secret Name | Description | How to Get |
+|-------------|-------------|------------|
+| `BROWSERSTACK_USER` | Your BrowserStack username | Found in your BrowserStack account settings |
+| `BROWSERSTACK_KEY` | Your BrowserStack access key | Found in your BrowserStack account settings |
+| `BROWSERSTACK_APP` | BrowserStack app URL for your APK | Upload your APK to BrowserStack (see below) |
+
+### 📱 Getting Your BrowserStack App URL
+
+To get the `BROWSERSTACK_APP` value for your secret:
+
+1. **Upload your APK to BrowserStack using cURL:**
+```bash
+curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
+  -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
+  -F "file=@app/android/android.wdio.native.app.v1.0.8.apk"
+```
+
+2. **Or upload via BrowserStack Dashboard:**
+   - Log into your BrowserStack account
+   - Go to **App Automate** → **Upload**
+   - Upload your APK file
+   - Copy the generated `app_url` (format: `bs://abc123def456`)
+
+3. **Use the app_url as your `BROWSERSTACK_APP` secret**
+
+### 🎯 Current Test Configuration
+
+The GitHub Actions workflow runs tests with the following configuration:
+
+- **Platform**: Android
+- **Device**: Samsung Galaxy S23 Ultra
+- **OS Version**: Android 13.0
+- **Automation**: UIAutomator2
+- **Test Suite**: All specs in `test/specs/android/*.js`
+
+### 🔄 How to Use
+
+#### Automatic Triggers
+The workflow runs automatically when:
+- You push code to `main` or `develop` branches
+- You create a pull request targeting `main` or `develop`
+
+#### Manual Trigger
+1. Go to your repository on GitHub
+2. Click on the **"Actions"** tab
+3. Select **"BrowserStack Android Tests"** from the workflow list
+4. Click **"Run workflow"** button
+5. Select the branch and click **"Run workflow"**
+
+### 📊 Test Results & Artifacts
+
+When tests run, you'll get:
+
+#### ✅ **On Success:**
+- Test results in the GitHub Actions log
+- BrowserStack performance reports (uploaded as artifacts)
+
+#### ❌ **On Failure:**
+- Detailed error logs in GitHub Actions
+- Complete test logs uploaded as artifacts
+- BrowserStack session details for debugging
+- All artifacts retained for 30 days
+
+#### 📋 **Viewing Results:**
+1. Go to the **Actions** tab in your repository
+2. Click on the specific workflow run
+3. View logs in real-time or download artifacts
+4. Check the BrowserStack dashboard for session recordings
+
+### 🛠️ Customization
+
+To modify the workflow for your needs:
+
+#### Change Target Branches:
+```yaml
+on:
+  push:
+    branches: [main, master, staging]  # Add your branches
+  pull_request:
+    branches: [main, master]
+```
+
+#### Modify Device Configuration:
+Update the device in `config/android-bs-wdio.conf.js`:
+```javascript
+capabilities: [{
+    "platformName": 'Android',
+    "appium:deviceName": 'Google Pixel 7',  // Change device
+    "appium:platformVersion": "13.0",       // Change OS version
+    "appium:automationName": "UIAutomator2",
+    "appium:app": process.env.BROWSERSTACK_APP,
+}]
+```
+
+#### Add Multiple Device Testing:
+```javascript
+capabilities: [
+    {
+        "platformName": 'Android',
+        "appium:deviceName": 'Samsung Galaxy S23 Ultra',
+        "appium:platformVersion": "13.0",
+        // ... other caps
+    },
+    {
+        "platformName": 'Android', 
+        "appium:deviceName": 'Google Pixel 7',
+        "appium:platformVersion": "13.0",
+        // ... other caps
+    }
+]
+```
+
+### 🚨 Troubleshooting
+
+#### Common Issues:
+
+**❌ "BROWSERSTACK_USER not found"**
+- Ensure you've added all three secrets to your repository
+- Check that secret names are exactly: `BROWSERSTACK_USER`, `BROWSERSTACK_KEY`, `BROWSERSTACK_APP`
+
+**❌ "App not found on BrowserStack"** 
+- Verify your `BROWSERSTACK_APP` URL is correct (starts with `bs://`)
+- Re-upload your APK if the URL expired
+
+**❌ "Tests failing in CI but working locally"**
+- Check the uploaded artifacts for detailed error logs
+- Verify your APK is the same version used locally
+- Ensure BrowserStack device capabilities match your local setup
+
+**❌ "Workflow not triggering"**
+- Check that your workflow file is in `.github/workflows/` directory
+- Verify YAML syntax is correct
+- Ensure you're pushing to the correct branches (`main`, `develop`)
+
+### 💡 Best Practices
+
+1. **Keep Secrets Secure**: Never commit BrowserStack credentials to your repository
+2. **Monitor Usage**: Check your BrowserStack usage to avoid exceeding limits
+3. **Update Apps Regularly**: Upload new APK versions as your app evolves  
+4. **Use Meaningful Names**: Name your test artifacts with timestamps for easy identification
+5. **Review Logs**: Always check the full logs and BrowserStack session recordings when tests fail
+
