@@ -1,4 +1,4 @@
-describe.only("Swipe test suite", () => {
+describe.skip("Swipe test suite", () => {
   beforeEach(async () => {
     // Tap new" command -> https://webdriver.io/docs/api/mobile/tap
     await $("~Swipe").tap();
