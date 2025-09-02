@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "caps": [
+    {
+      "type": "text",
+      "name": "platformName",
+      "value": "Android",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:platformVersion",
+      "value": "16",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:deviceName",
+      "value": "Pixel 9 Pro XL",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:app",
+      "value": "/Users/joanesquivel/Desktop/TestAutomation/appium-demo/app/android/android.wdio.native.app.v1.0.8.apk",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:automationName",
+      "value": "UIAutomator2",
+      "enabled": true
+    }
+  ],
+  "server": {
+    "local": {},
+    "remote": {
+      "port": "4724",
+      "hostname": "0.0.0.0",
+      "path": "/",
+      "host": "0.0.0.0"
+    },
+    "sauce": {
+      "dataCenter": "us-west-1"
+    },
+    "headspin": {},
+    "browserstack": {},
+    "lambdatest": {},
+    "advanced": {},
+    "bitbar": {},
+    "kobiton": {},
+    "perfecto": {},
+    "pcloudy": {},
+    "testingbot": {},
+    "experitest": {},
+    "roboticmobi": {}
+  },
+  "serverType": "remote",
+  "visibleProviders": []
+}

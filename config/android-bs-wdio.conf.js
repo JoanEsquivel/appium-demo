@@ -1,9 +1,13 @@
-const projectPath = require("path");
-const androidAppPath = projectPath.join(
-    process.cwd(),
-    "app/android/android.wdio.native.app.v1.0.8.apk"
-);
+require('dotenv').config();
+
+// const projectPath = require("path");
+// const androidAppPath = projectPath.join(
+//     process.cwd(),
+//     "app/android/android.wdio.native.app.v1.0.8.apk"
+// );
 exports.config = {
+    user: process.env.BROWSERSTACK_USER,
+    key: process.env.BROWSERSTACK_KEY,
     //
     // ====================
     // Runner Configuration
@@ -58,10 +62,10 @@ exports.config = {
     //
     capabilities: [{
         "platformName": 'Android',
-        "appium:deviceName": 'Pixel 9 Pro XL',
-        "appium:platformVersion": "16",
+        "appium:deviceName": 'Samsung Galaxy S23 Ultra',
+        "appium:platformVersion": "13.0",
         "appium:automationName": "UIAutomator2",
-        "appium:app": androidAppPath,
+        "appium:app": process.env.BROWSERSTACK_APP,
         // "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity"
     }],
     //
@@ -111,7 +115,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ["appium"],
+    services: ["browserstack"],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
