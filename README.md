@@ -488,11 +488,3 @@ capabilities: [
 - Verify YAML syntax is correct
 - Ensure you're pushing to the correct branches (`main`, `develop`)
 
-### 💡 Best Practices
-
-1. **Keep Secrets Secure**: Never commit BrowserStack credentials to your repository
-2. **Monitor Usage**: Check your BrowserStack usage to avoid exceeding limits
-3. **Update Apps Regularly**: Upload new APK versions as your app evolves  
-4. **Use Meaningful Names**: Name your test artifacts with timestamps for easy identification
-5. **Review Logs**: Always check the full logs and BrowserStack session recordings when tests fail
-
