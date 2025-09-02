@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "caps": [
+    {
+      "type": "text",
+      "name": "platformName",
+      "value": "IOS",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:platformVersion",
+      "value": "18.4",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:deviceName",
+      "value": "iPhone 16 Pro",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:app",
+      "value": "/Users/joanesquivel/Desktop/TestAutomation/appium-demo/app/ios/wdiodemoapp.app",
+      "enabled": true
+    },
+    {
+      "type": "text",
+      "name": "appium:automationName",
+      "value": "XCUItest",
+      "enabled": true
+    }
+  ],
+  "server": {
+    "local": {},
+    "remote": {
+      "port": "4724",
+      "hostname": "0.0.0.0",
+      "path": "/",
+      "host": "0.0.0.0"
+    },
+    "sauce": {
+      "dataCenter": "us-west-1"
+    },
+    "headspin": {},
+    "browserstack": {},
+    "lambdatest": {},
+    "advanced": {},
+    "bitbar": {},
+    "kobiton": {},
+    "perfecto": {},
+    "pcloudy": {},
+    "testingbot": {},
+    "experitest": {},
+    "roboticmobi": {}
+  },
+  "serverType": "remote",
+  "visibleProviders": []
+}
